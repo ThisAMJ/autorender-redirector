@@ -6,7 +6,7 @@ function handler(req) {
     if (pathname.startsWith('/')) {
         pathname = pathname.slice(1);
     }
-    return new Response(null, { status: 302, headers: { Location: `https://autorender.p2sr.org/${pathname}` } });return new Response(null, { status: 302, headers: { Location: "https://portal2.sr/" } });
+    return new Response(null, { status: 302, headers: { Location: `https://autorender.p2sr.org/${pathname}` } });
 }
 
 Deno.serve({ port: PORT }, handler);
